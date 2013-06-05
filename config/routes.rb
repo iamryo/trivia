@@ -1,4 +1,6 @@
 Trivia::Application.routes.draw do
+  get "static_pages/index"
+
   resources :questions
 
   root :to => 'static_pages#index'
