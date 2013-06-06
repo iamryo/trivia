@@ -1,7 +1,7 @@
 Trivia::Application.routes.draw do
   get "static_pages/index"
 
-  resources :questions
+  resources :questions, :answers
 
   root :to => 'static_pages#index'
   # The priority is based upon order of creation:
