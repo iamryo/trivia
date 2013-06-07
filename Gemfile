@@ -13,6 +13,7 @@ gem 'recipient_interceptor'
 gem 'simple_form'
 gem 'strong_parameters'
 gem 'unicorn'
+gem 'carrierwave'
 
 group :assets do
   gem 'coffee-rails'
