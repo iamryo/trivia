@@ -14,7 +14,6 @@ class QuestionsController < ApplicationController
   # GET /questions/1.json
   def show
     @question = Question.find(params[:id])
-    @body = @question.body
 
     respond_to do |format|
       format.html # show.html.erb
@@ -25,7 +24,6 @@ class QuestionsController < ApplicationController
   # GET /questions/new
   # GET /questions/new.json
   def new
-    @model_name = Question.model_name.human
     @question = Question.new
 
     respond_to do |format|
@@ -89,6 +87,6 @@ class QuestionsController < ApplicationController
     # params.require(:person).permit(:name, :age)
     # Also, you can specialize this method with per-user checking of permissible attributes.
     def question_params
-      params.require(:question).permit(:body)
+      params.require(:question).permit(:body, :image)
     end
 end

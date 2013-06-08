@@ -6,7 +6,7 @@
     </div>
   </div>
   <div class='control-group'>
-    <%= f.label :image, :class => 'control-label' %>
+    <%= f.label :image, 'Image:', :class => 'control-label' %>
     <div class='controls'>
       <%=f.file_field :image, :id => 'lefile', :style => 'display:none' %>
       <div class="input-append">
@@ -20,8 +20,3 @@
                 questions_path, :class => 'btn' %>
   </div>
 <% end %>
-<script type="text/javascript">
-$('input[id=lefile]').change(function()  {
-    $('#photoCover').val($(this).val());
-});
-</script>
