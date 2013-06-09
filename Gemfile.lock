@@ -130,6 +130,7 @@ GEM
       json (~> 1.4)
     recipient_interceptor (0.1.1)
       mail
+    rmagick (2.13.2)
     rspec-core (2.13.1)
     rspec-expectations (2.13.0)
       diff-lcs (>= 1.1.3, < 2.0)
@@ -211,6 +212,7 @@ DEPENDENCIES
   rack-timeout
   rails (>= 3.2.11)
   recipient_interceptor
+  rmagick
   rspec-rails
   sass-rails
   sham_rack
