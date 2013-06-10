@@ -15,6 +15,7 @@ gem 'strong_parameters'
 gem 'unicorn'
 gem 'carrierwave'
 gem 'rmagick'
+gem 'fog'
 
 group :assets do
   gem 'coffee-rails'

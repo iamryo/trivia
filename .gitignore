@@ -15,4 +15,6 @@
 /tmp
 
 #Ignore uploaded images
-/public/uploads/*.*
+/public/uploads/
+
+credentials.sh
