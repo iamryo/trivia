@@ -3,7 +3,7 @@
   <h1><%=t '.title', :default => model_class.model_name.human %></h1>
 </div>
 <div class="span2 imageThumb">
-  <%= image_tag @question.image_url(:thumb), :class => 'img-polaroid thumb' %>
+  <%= image_tag @question.image_url(:thumb), :class => 'img-polaroid thumb' if @question.image? %>
 </div>
 <div class = "span4 questionText"
 <dl class="dl-horizontal">

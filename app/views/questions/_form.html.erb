@@ -14,6 +14,13 @@
         <a class="btn" onclick="$('input[id=lefile]').click();">Browse</a>
       </div>
     </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :remote_image_url, 'Or Image URL:', :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :remote_image_url, :class => 'input-large' %>
+    </div>
+  </div>
   <div class="form-actions">
     <%= f.button :submit, :class => 'btn-primary' %>
     <%= link_to t('.cancel', :default => t("helpers.links.cancel")),

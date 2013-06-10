@@ -87,6 +87,6 @@ class QuestionsController < ApplicationController
     # params.require(:person).permit(:name, :age)
     # Also, you can specialize this method with per-user checking of permissible attributes.
     def question_params
-      params.require(:question).permit(:body, :image)
+      params.require(:question).permit(:body, :image, :remote_image_url)
     end
 end
