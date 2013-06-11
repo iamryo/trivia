@@ -35,6 +35,7 @@ GEM
       json
     arel (3.0.2)
     awesome_print (1.1.0)
+    bcrypt-ruby (3.0.1)
     better_errors (0.8.0)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
@@ -64,6 +65,11 @@ GEM
     delayed_job_active_record (4.0.0.beta2)
       activerecord (>= 3.0, < 4.1)
       delayed_job (~> 4.0.0.beta1)
+    devise (2.2.4)
+      bcrypt-ruby (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (~> 3.1)
+      warden (~> 1.2.1)
     diff-lcs (1.2.4)
     dotenv (0.7.0)
     erubis (2.7.0)
@@ -115,6 +121,7 @@ GEM
     net-ssh (2.6.7)
     newrelic_rpm (3.6.2.96)
     nokogiri (1.5.10)
+    orm_adapter (0.4.0)
     pg (0.15.1)
     polyglot (0.3.3)
     rack (1.4.5)
@@ -202,6 +209,8 @@ GEM
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
+    warden (1.2.1)
+      rack (>= 1.0)
 
 PLATFORMS
   ruby
@@ -217,6 +226,7 @@ DEPENDENCIES
   coffee-rails
   database_cleaner
   delayed_job_active_record (>= 4.0.0.beta2)
+  devise
   factory_girl_rails
   flutie
   fog

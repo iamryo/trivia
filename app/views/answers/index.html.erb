@@ -15,7 +15,7 @@
     <% @answers.each do |answer| %>
       <tr>
         <td><%= link_to answer.id, answer_path(answer) %></td>
-        <td><%= answer.body %></td>
+        <td><%= link_to answer.body, answer_path(answer) %></td>
         <td><%=l answer.created_at %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),

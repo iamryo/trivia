@@ -1,4 +1,7 @@
 class AnswersController < ApplicationController
+
+  before_filter :authenticate_user!, except: [:index, :show]
+
   # GET /answers
   # GET /answers.json
   def index

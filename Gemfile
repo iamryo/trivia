@@ -16,6 +16,7 @@ gem 'unicorn'
 gem 'carrierwave'
 gem 'rmagick'
 gem 'fog'
+gem 'devise'
 
 group :assets do
   gem 'coffee-rails'
