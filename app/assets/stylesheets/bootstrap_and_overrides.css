@@ -22,3 +22,9 @@
 
 .brand:hover {
   background-color: lightgrey;
+}
+
+.form-horizontal .control-label {
+  width: 200px;
+  padding-right: 5px;
+}
