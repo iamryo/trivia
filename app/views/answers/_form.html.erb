@@ -1,5 +1,10 @@
 <%= simple_form_for @answer, :html => { :class => 'form-horizontal' } do |f| %>
-  <%= f.input :body %>
+  <div class='control-group'>
+    <%= f.label :body, 'Answer:', :class => 'control-label' %>
+    <div class='controls'>
+      <%= f.text_field :body, :class => 'input-large' %>
+    </div>
+  </div>
   <div class="form-actions">
     <%= f.button :submit, :class => 'btn-primary' %>
     <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
