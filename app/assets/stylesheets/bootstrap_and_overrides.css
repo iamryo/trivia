@@ -5,3 +5,20 @@
   To use Glyphicons sprites instead of Font Awesome, replace with "require twitter-bootstrap-static/sprites"
   =require twitter-bootstrap-static/fontawesome
   */
+
+.danger {
+  color: red;
+}
+
+.danger:visited {
+  color: red;
+}
+
+.danger:hover {
+  color: rgb(153, 8, 8);
+  text-decoration: none;
+  background-color: white;
+}
+
+.brand:hover {
+  background-color: lightgrey;
