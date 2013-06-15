@@ -1,4 +1,4 @@
-<%= simple_form_for @answer, :html => { :class => 'form-horizontal' } do |f| %>
+<%= simple_form_for [@question, @answer], :html => { :class => 'form-horizontal' } do |f| %>
   <div class='control-group'>
     <%= f.label :body, 'Answer:', :class => 'control-label' %>
     <div class='controls'>
@@ -8,6 +8,6 @@
   <div class="form-actions">
     <%= f.button :submit, :class => 'btn-primary' %>
     <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
-                answers_path, :class => 'btn' %>
+                question_answers_path, :class => 'btn' %>
   </div>
 <% end %>
