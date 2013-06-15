@@ -78,11 +78,12 @@ class AnswersController < ApplicationController
   # DELETE /answers/1
   # DELETE /answers/1.json
   def destroy
+    @question = Question.find(params[:question_id])
     @answer = Answer.find(params[:id])
     @answer.destroy
 
     respond_to do |format|
-      format.html { redirect_to answers_url }
+      format.html { redirect_to @question }
       format.json { head :no_content }
     end
   end
