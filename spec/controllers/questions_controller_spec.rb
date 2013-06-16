@@ -20,11 +20,18 @@ require 'spec_helper'
 
 describe QuestionsController do
 
+  before(:each) do 
+    FactoryGirl.create(:user)
+    current_user = :user
+  end
+
   # This should return the minimal set of attributes required to create a valid
   # Question. As you add validations to Question, be sure to
   # adjust the attributes here as well.
-  let(:valid_attributes) { {  } }
-
+  let(:valid_attributes) { {
+    :body => "blah blah blah"
+  } }
+  
   # This should return the minimal set of values that should be in the session
   # in order to pass any filters (e.g. authentication) defined in
   # QuestionsController. Be sure to keep this updated too.
