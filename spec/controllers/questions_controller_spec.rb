@@ -31,7 +31,7 @@ describe QuestionsController do
   let(:valid_attributes) { {
     :body => "blah blah blah"
   } }
-  
+
   # This should return the minimal set of values that should be in the session
   # in order to pass any filters (e.g. authentication) defined in
   # QuestionsController. Be sure to keep this updated too.
@@ -62,7 +62,7 @@ describe QuestionsController do
 
   describe "GET edit" do
     it "assigns the requested question as @question" do
-      question = Question.create! valid_attributes
+      question = FactoryGirl.create(:question)
       get :edit, {:id => question.to_param}, valid_session
       assigns(:question).should eq(question)
     end
