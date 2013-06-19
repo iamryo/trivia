@@ -21,8 +21,8 @@ require 'spec_helper'
 describe QuestionsController do
 
   before(:each) do 
-    FactoryGirl.create(:user)
-    current_user = :user
+    @user = FactoryGirl.create(:user)
+    sign_in @user
   end
 
   # This should return the minimal set of attributes required to create a valid
@@ -70,14 +70,13 @@ describe QuestionsController do
 
   describe "POST create" do
     describe "with valid params" do
-      it "creates a new Question" do
-        expect {
-          post :create, {:question => valid_attributes}, valid_session
-        }.to change(Question, :count).by(1)
-      end
+      it "assigns a newly created question as @question" do
+        post :create, :question => {'body' => 'blah blah blah'}
+        assigns(:question).should be_valid
+    end
 
       it "assigns a newly created question as @question" do
-        post :create, {:question => valid_attributes}, valid_session
+        post :create, :question => {'body' => 'blah blah blah'}
         assigns(:question).should be_a(Question)
         assigns(:question).should be_persisted
       end
