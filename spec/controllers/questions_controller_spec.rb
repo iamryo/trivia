@@ -106,13 +106,13 @@ describe QuestionsController do
   describe "PUT update" do
     describe "with valid params" do
       it "updates the requested question" do
-        question = FactoryGirl.create(:question)
+        @question = Question.create! valid_attributes
         # Assuming there are no other questions in the database, this
-        # specifies that the Question created on the previous line
+        # specifies that the question created on the previous line
         # receives the :update_attributes message with whatever params are
         # submitted in the request.
-        Question.last.should_receive(:update_attributes).with({ "body" => "blah blah" })
-        put :update, {:id => question.to_param, :question => { "body" => "blah blah" }}, valid_session
+        Question.any_instance.should_receive(:update_attributes).with( 'body' => "blargh")
+        put :update, {:id => @question.to_param, :question => {'body' => "blargh"}}, valid_session
       end
 
       it "assigns the requested question as @question" do
