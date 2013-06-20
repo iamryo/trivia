@@ -62,8 +62,8 @@ describe QuestionsController do
   describe "GET edit" do
     it "assigns the requested question as @question" do
       question = Question.create!(:body => 'blah blah blah')
-      get :edit, {:id => question.to_param}, valid_session
-      assigns(:question).should eq(@question)
+      get :edit, {:id => question.id}
+      assigns(:question).should eq(question)
     end
   end
 
