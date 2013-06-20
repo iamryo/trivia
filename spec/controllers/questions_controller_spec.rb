@@ -90,14 +90,14 @@ describe QuestionsController do
       it "assigns a newly created but unsaved question as @question" do
         # Trigger the behavior that occurs when invalid params are submitted
         Question.any_instance.stub(:save).and_return(false)
-        post :create, {:question => {  }}, valid_session
+        post :create, {:question => {'body' => "blargh"}}, valid_session
         assigns(:question).should be_a_new(Question)
       end
 
       it "re-renders the 'new' template" do
         # Trigger the behavior that occurs when invalid params are submitted
         Question.any_instance.stub(:save).and_return(false)
-        post :create, {:question => {  }}, valid_session
+        post :create, {:question => {'body' => "blargh"}}, valid_session
         response.should render_template("new")
       end
     end
@@ -141,7 +141,7 @@ describe QuestionsController do
         question = Question.create! valid_attributes
         # Trigger the behavior that occurs when invalid params are submitted
         Question.any_instance.stub(:save).and_return(false)
-        put :update, {:id => question.to_param, :question => {  }}, valid_session
+        put :update, {:id => question.to_param, :question => {'body' => "blargh"}}, valid_session
         response.should render_template("edit")
       end
     end
