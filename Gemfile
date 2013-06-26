@@ -37,6 +37,8 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'rspec-rails'
   gem 'sham_rack'
+  gem 'capybara', '1.1.4'
+
 end
 
 group :test do
