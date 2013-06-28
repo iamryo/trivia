@@ -48,7 +48,10 @@ group :test do
   gem 'shoulda-matchers'
   gem 'simplecov', require: false
   gem 'timecop'
+  gem 'simplecov'
 end
+
+
 
 group :staging, :production do
   gem 'newrelic_rpm'

@@ -1,7 +1,7 @@
 module SignInHelpers
-  def sign_in
-    sign_in_as 'person@example.com'
-  end
+  # def sign_in
+  #   sign_in_as 'person@example.com'
+  # end
 
   def sign_in_as(email, password)
     visit root_path
