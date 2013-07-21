@@ -5,6 +5,7 @@
 <table class="table table-striped">
   <thead>
     <tr>
+      <th>Show Answers</th>
       <th><%= model_class.human_attribute_name(:id) %></th>
       <th><%= model_class.human_attribute_name(:body) %></th>
       <th><%= model_class.human_attribute_name(:created_at) %></th>
@@ -14,6 +15,23 @@
   <tbody>
     <% @questions.each do |question| %>
       <tr>
+      <td class="toggleable">
+          <%= link_to "+", "#", :class => "toggle-link" %>
+          <div id ="transactions_form" class="toggle-target" style="display:none">
+            <table>
+            <th>Answer</th>
+            <th>Created at:</th>
+            <!-- <th>Created by:</th> -->
+            <% question.answers.each do |answer| %>
+              <tr>
+               <td><%= answer.body %></td>
+               <td><%= answer.created_at %></td>
+               <!-- <td><%#= answer. %></td> -->
+              </tr>
+            <% end %>
+            </table>
+          </div>
+        </td>
         <td><%= link_to question.id, question_path(question) %></td>
         <td><%= link_to question.body, question_path(question) %></td>
         <td><%=l question.created_at %></td>

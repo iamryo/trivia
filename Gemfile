@@ -6,6 +6,7 @@ gem 'delayed_job_active_record', '>= 4.0.0.beta2'
 gem 'flutie'
 gem 'high_voltage'
 gem 'jquery-rails'
+gem 'newrelic_rpm'
 gem 'pg'
 gem 'rack-timeout'
 gem 'rails', '>= 3.2.11'
@@ -54,5 +55,4 @@ end
 
 
 group :staging, :production do
-  gem 'newrelic_rpm'
 end
