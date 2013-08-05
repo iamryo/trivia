@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-gem 'airbrake'
 gem 'bourbon'
 gem 'delayed_job_active_record', '>= 4.0.0.beta2'
 gem 'flutie'
