@@ -17,6 +17,7 @@ gem 'carrierwave'
 gem 'rmagick'
 gem 'fog'
 gem 'devise'
+gem 'bootstrap_helper'
 
 group :assets do
   gem 'coffee-rails'
