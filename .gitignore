@@ -16,6 +16,4 @@
 
 #Ignore uploaded images
 /public/uploads/
-
-credentials.sh
 /coverage/
