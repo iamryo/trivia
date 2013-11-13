@@ -55,4 +55,5 @@ end
 
 
 group :staging, :production do
+  gem 'skylight'
 end
