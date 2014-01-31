@@ -1,36 +1,6 @@
-production:
-  adapter: postgresql
-  database: trivia_production
-  username: ryanclark
-  password: butterd0g
-  host: localhost
-  pool: 5
-  timeout: 5000
-  socket: /tmp/pgsql_socket
-
 development:
-  adapter: postgresql
-  database: trivia_develpoment
-  username: ryanclark
-  password: butterd0g
-  host: localhost
-  pool: 5
-  timeout: 5000
-  socket: /tmp/pgsql_socket
-
-# Warning: The database defined as "test" will be erased and
-# re-generated from your development database when you run "rake".
-# Do not set this db to the same as development or production.
-test: &test
-  adapter: postgresql
-  database: trivia_test
-  username: ryanclark
-  password: butterd0g
-  host: localhost
-  pool: 5
-  timeout: 5000
-  socket: /tmp/pgsql_socket
-  min_messages: WARNING
-
-cucumber:
-  <<: *test
+  sessions:
+    default:
+      database: mongoid
+      hosts:
+        - mongodb://ryan:ninefold@paulo.mongohq.com:10000/Ninefold

@@ -1,7 +1,8 @@
-class Answer < ActiveRecord::Base
+class Answer
+  include Mongoid::Document
   attr_accessible :body
 
-  belongs_to :question
+  embedded_in :question
 
   validates_presence_of :body
 
