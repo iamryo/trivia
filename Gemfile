@@ -1,19 +1,18 @@
 source 'https://rubygems.org'
 
 gem 'bourbon'
-gem 'delayed_job_active_record', '>= 4.0.0.beta2'
 gem 'flutie'
 gem 'high_voltage'
 gem 'jquery-rails'
 gem 'newrelic_rpm'
 gem 'pg'
-gem 'mongoid'
-gem 'bson_ext'
+# gem 'mongoid'
+# gem 'bson_ext'
 gem 'rack-timeout'
 gem 'rails', '>= 3.2.11'
 gem 'recipient_interceptor'
 gem 'simple_form'
-# gem 'strong_parameters'
+gem 'strong_parameters'
 gem 'unicorn'
 gem 'carrierwave'
 gem 'rmagick'
@@ -21,7 +20,7 @@ gem 'fog'
 gem 'devise'
 gem 'bootstrap_helper'
 gem 'daemons'
-# gem 'will_paginate'
+gem 'will_paginate'
 
 group :assets do
   gem 'coffee-rails'
@@ -52,7 +51,6 @@ group :test do
   gem 'shoulda-matchers'
   gem 'simplecov', require: false
   gem 'timecop'
-  gem 'simplecov'
 end
 
 
