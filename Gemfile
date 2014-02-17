@@ -25,8 +25,8 @@ gem 'will_paginate'
 group :assets do
   gem 'coffee-rails'
   gem 'sass-rails'
-  gem 'uglifier'
   gem 'twitter-bootstrap-rails'
+  gem 'uglifier'
 end
 
 group :development do
