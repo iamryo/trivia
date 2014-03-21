@@ -1,5 +1,5 @@
 GIT
-  remote: https://github.com/IAMRYO/carriermine.git
+  remote: https://a334667935734188415f79f803fa9ee9e69e5591:x-oauth-basic@github.com/IAMRYO/carriermine.git
   revision: 3842d798445fa5b146231ddcc837d666eba957b3
   specs:
     carrierwave (0.8.0)
