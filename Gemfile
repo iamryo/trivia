@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.0.0'
+
 gem 'bourbon'
 gem 'delayed_job_active_record', '>= 4.0.0.beta2'
 gem 'flutie'
@@ -49,7 +51,6 @@ group :test do
   gem 'shoulda-matchers'
   gem 'simplecov', require: false
   gem 'timecop'
-  gem 'simplecov'
 end
 
 
