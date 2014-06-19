@@ -1,6 +1,6 @@
 ---
 # The Skylight ID for the application.
-application: VmlrvcWKbqlQ
+application: ENV['SKYLIGHT_APP']
 
 # The authentication token for the application.
-authentication: 7VS2WqRhX18aHxwxak2DeLPB5CIqJ36z2Le4Q38rLgM
+authentication: ENV['SKYLIGHT_TOKEN']
