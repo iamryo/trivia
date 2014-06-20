@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 ruby '2.0.0'
 
+gem 'railties', "3.2.11"
+
 gem 'bourbon'
 gem 'delayed_job_active_record', '>= 4.0.0.beta2'
 gem 'flutie'
@@ -10,10 +12,10 @@ gem 'jquery-rails'
 gem 'newrelic_rpm'
 gem 'pg'
 gem 'rack-timeout'
-gem 'rails', '>= 3.2.11'
+gem 'rails', '3.2.11'
 gem 'recipient_interceptor'
 gem 'simple_form'
-# gem 'strong_parameters'
+gem 'strong_parameters'
 gem 'unicorn'
 gem 'carrierwave'
 gem 'rmagick'
