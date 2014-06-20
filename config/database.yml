@@ -25,3 +25,13 @@ test: &test
 
 cucumber:
   <<: *test
+
+production: 
+  adapter: postgresql
+  database: trivia_develpoment
+  username: ryanclark
+  password: butterd0g
+  host: localhost
+  pool: 5
+  timeout: 5000
+  socket: /tmp/pgsql_socket

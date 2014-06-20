@@ -288,7 +288,6 @@ DEPENDENCIES
   pg
   rack-timeout
   rails (= 3.2.11)
-  railties (= 3.2.11)
   recipient_interceptor
   rmagick
   rspec-rails
