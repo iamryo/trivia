@@ -18,5 +18,5 @@
 /public/uploads/
 /coverage/
 
-/config/skylight.yml
+/config/database.yml
 
