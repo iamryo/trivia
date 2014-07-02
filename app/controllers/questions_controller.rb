@@ -5,6 +5,7 @@ class QuestionsController < ApplicationController
   # GET /questions
   # GET /questions.json
   def index
+    @question = Question.find(:all)
     @questions = Question.order(:updated_at)
 
     respond_to do |format|
