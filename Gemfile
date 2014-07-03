@@ -20,6 +20,7 @@ gem 'rmagick'
 gem 'fog'
 gem 'devise'
 gem 'bootstrap_helper'
+gem 'wicked_pdf'
 
 group :assets do
   gem 'coffee-rails'
