@@ -479,6 +479,8 @@ GEM
     warden (1.2.3)
       rack (>= 1.0)
     websocket (1.0.7)
+    wicked_pdf (0.10.2)
+      rails
     will_paginate (3.0.5)
 >>>>>>> Less secrets, more assets
     xpath (0.1.4)
@@ -537,3 +539,4 @@ DEPENDENCIES
   twitter-bootstrap-rails
   uglifier
   unicorn
+  wicked_pdf

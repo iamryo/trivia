@@ -21,6 +21,8 @@ gem 'fog'
 gem 'devise'
 gem 'bootstrap_helper'
 gem 'daemons'
+gem 'wicked_pdf'
+
 
 group :assets do
   gem 'coffee-rails'
