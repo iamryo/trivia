@@ -6,7 +6,6 @@
   <thead>
     <tr>
       <th>Question:</th>
-      <th>Image:</th>
       <th><%= model_class.human_attribute_name(:created_at) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
@@ -15,7 +14,6 @@
     <% @questions.each do |question| %>
       <tr>
       <td><%= link_to question.body, question_path(question) %></td>
-       <td><%= image_tag @question.image_url(:thumb), :class => 'img-polaroid thumb' if @question.image? %></td>
       <% if !question.answers.empty? %>
         <td class="toggleable">
             <%= link_to " Answers: #{question.answers.count}" , "#", :class => "toggle-link icon-plus" %>
