@@ -1,7 +1,8 @@
 class QuestionsController < ApplicationController
 
   before_filter :authenticate_user!, except: [:index, :show]
-  
+  before_filter :set_cache_control_headers, only: [:index, :show]
+
   # GET /questions
   # GET /questions.json
   def index
