@@ -48,7 +48,6 @@ group :development, :test do
 end
 
 group :test do
-  gem 'bourne', require: false
   gem 'database_cleaner'
   gem 'launchy'
   gem 'shoulda-matchers'
