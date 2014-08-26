@@ -8,7 +8,6 @@
     %title= content_for?(:title) ? yield(:title) : "Trivia"
     = csrf_meta_tags
     = render 'layouts/shims'
-    %script(src='/assets/jquery.js?body=1')
 %body
   %div{:class => 'navbar navbar-fluid-top'}
     %div{:class => 'navbar-inner'}
@@ -44,3 +43,4 @@
   <!-- %&copy; Company 2013 -->
 
   = javascript_include_tag "application"
+  %script(src='/assets/jquery.js?body=1')
