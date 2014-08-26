@@ -43,7 +43,7 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'rspec-rails'
   gem 'sham_rack'
-  gem 'capybara', '1.1.4'
+  gem 'capybara', '2.2.0'
 
 end
 
