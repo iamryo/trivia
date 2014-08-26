@@ -2,13 +2,13 @@ Trivia::Application.routes.draw do
   devise_for :users
 
   get "static_pages/index"
-  
+
   resources :questions do
     resources :answers
   end
-  root :to => 'questions#index'
+  root :to => 'static_pages#index'
 
-  resources :answers 
+  resources :answers
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

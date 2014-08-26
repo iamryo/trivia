@@ -22,6 +22,7 @@ gem 'fog'
 gem 'devise'
 gem 'bootstrap_helper'
 gem 'wicked_pdf'
+gem 'haml'
 
 group :assets do
   gem 'coffee-rails'
