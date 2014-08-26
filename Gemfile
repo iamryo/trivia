@@ -23,6 +23,7 @@ gem 'devise'
 gem 'bootstrap_helper'
 gem 'daemons'
 gem 'wicked_pdf'
+gem 'haml'
 
 
 group :assets do
