@@ -1,0 +1,15 @@
+Wed, 27 Aug 2014 10:17:12 -0700
+doc/README_FOR_APP	Wed, 15 May 2013 22:20:05 -0700
+app/controllers/answers_controller.rb	Mon, 25 Aug 2014 20:20:51 -0700
+app/controllers/application_controller.rb	Wed, 15 May 2013 22:20:05 -0700
+app/controllers/questions_controller.rb	Mon, 25 Aug 2014 20:20:51 -0700
+app/controllers/static_pages_controller.rb	Wed, 05 Jun 2013 14:16:31 -0700
+app/helpers/answers_helper.rb	Wed, 05 Jun 2013 15:22:51 -0700
+app/helpers/application_helper.rb	Thu, 06 Jun 2013 10:08:36 -0700
+app/helpers/bootstrap_flash_helper.rb	Mon, 05 Aug 2013 08:43:49 -0700
+app/helpers/questions_helper.rb	Wed, 15 May 2013 23:00:28 -0700
+app/helpers/static_pages_helper.rb	Wed, 05 Jun 2013 14:16:31 -0700
+app/models/answer.rb	Sat, 17 May 2014 13:02:32 -0700
+app/models/question.rb	Sat, 20 Jul 2013 21:17:43 -0700
+app/models/user.rb	Tue, 11 Jun 2013 11:37:31 -0700
+app/uploaders/image_uploader.rb	Tue, 11 Jun 2013 09:13:11 -0700
