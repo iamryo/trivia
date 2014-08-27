@@ -20,3 +20,4 @@
 
 /config/database.yml
 credentials.sh
+envars.sh
