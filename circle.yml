@@ -1,0 +1,5 @@
+deployment:
+  production:
+    branch: skylight
+    commands:
+      - curl ENV[DEPLOYMENT_URL]
