@@ -1,5 +1,5 @@
-require 'spec_helper'
+require 'rails_helper'
 
 describe "questions/show" do
-  it 
+  it
 end

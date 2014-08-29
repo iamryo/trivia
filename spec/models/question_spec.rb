@@ -1,4 +1,4 @@
-require 'spec_helper'
+require 'rails_helper'
 
 describe Question do
   before(:each) do
@@ -6,7 +6,7 @@ describe Question do
     current_user = :user
   end
 
-  it "has a body" do 
+  it "has a body" do
     question = FactoryGirl.create(:question)
     question.body.should_not be_nil
   end
@@ -21,7 +21,7 @@ describe Question do
     question.should_not be_valid
   end
 
-  it "should have answers" do 
+  it "should have answers" do
     answer1 = FactoryGirl.create(:answer, :body => "This is the first answer")
     answer2 = FactoryGirl.create(:answer, :body => "This is the second answer")
     question = FactoryGirl.create(:question, :answers => [answer1, answer2])

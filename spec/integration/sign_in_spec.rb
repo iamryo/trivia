@@ -1,4 +1,4 @@
-require 'spec_helper'
+require 'rails_helper'
 
 feature 'Sign in as a user' do
   scenario 'with a valid user' do
