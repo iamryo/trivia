@@ -1,9 +1,9 @@
-require 'spec_helper'
+require 'rails_helper'
 
-feature 'View the homepage' do
-  # scenario 'user sees relevant information' do
-  #   visit root_path
-  #   expect(page).to have_css 'h1', text: 'Questions'
-  #   expect(page).to have_css  'a.brand', text: 'Trivia'
-  # end
+RSpec.describe "home page", :type => :request do
+  it "displays the homepage" do
+    get "/"
+
+    assert_select ".header", :text => "Welcome to My Trivia App!"
+  end
 end
