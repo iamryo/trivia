@@ -1,4 +1,4 @@
-require 'spec_helper'
+require 'rails_helper'
 
 describe Answer do
   before(:each) do
@@ -6,7 +6,7 @@ describe Answer do
     current_user = :user
   end
 
-  it "has a body" do 
+  it "has a body" do
     answer = FactoryGirl.create(:answer)
     answer.body.should_not be_nil
   end

@@ -1,4 +1,4 @@
-require 'spec_helper'
+require 'rails_helper'
 
 describe StaticPagesController do
   #
@@ -8,5 +8,5 @@ describe StaticPagesController do
   #     response.should be_success
   #   end
   # end
-  # 
+  #
 end
