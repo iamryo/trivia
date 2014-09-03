@@ -18,6 +18,7 @@ class AnswersController < ApplicationController
   # GET /answers/1.json
   def show
     @answer = Answer.find(params[:id])
+    question_id = @answer.question
     @body = @answer.body
 
     respond_to do |format|
@@ -40,6 +41,7 @@ class AnswersController < ApplicationController
 
   # GET /answers/1/edit
   def edit
+    @question = Answer.find(params[:id]).question
     @answer = Answer.find(params[:id])
   end
 

@@ -24,12 +24,12 @@
   <tbody>
     <% @question.answers.each do |answer| %>
       <tr>
-        <td><%= link_to answer.id, answer_path(answer) %></td>
-        <td><%= link_to answer.body, answer_path(answer) %></td>
+        <td><%= link_to answer.id, question_answer_path(answer) %></td>
+        <td><%= link_to answer.body, question_answer_path(answer) %></td>
         <td><%=l answer.created_at %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
-                      edit_answer_path(answer), :class => 'btn btn-mini' %>
+                      edit_question_answer_path(@question, answer), :class => 'btn btn-mini' %>
           <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
                       question_answer_path(answer),
                       :method => :delete,
