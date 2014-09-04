@@ -1,7 +1,7 @@
 - model_class = Question
 %div{:class => 'page-header'}
   %h1
-    =t '.title', :default => model_class.model_name.human + :
+    =t '.title', :default => model_class.model_name.human
 %div{:class =>'span2 imageThumb'}
   = image_tag @question.image_url(:thumb), :class => 'img-polaroid thumb' if @question.image?
 %div{:class => 'span4 questionText'}
