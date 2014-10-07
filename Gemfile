@@ -15,7 +15,7 @@ gem 'recipient_interceptor'
 gem 'simple_form'
 gem 'strong_parameters'
 gem 'unicorn'
-gem 'carrierwave', git: "https://#{ENV['GITHUB_TOKEN']}:x-oauth-basic@github.com/IAMRYO/carriermine.git"
+gem 'carrierwave'
 gem 'rmagick'
 gem 'fog'
 gem 'devise'
