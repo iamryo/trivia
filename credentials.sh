@@ -15,7 +15,7 @@
 
 ### CREDENTIALS ###
 
-# Github app credentials are required to sign in to Pear.  
+# Github app credentials are required to sign in to Pear.
 # Here is a link to get set up with the necessary github credentials:
 # http://wiki.growstuff.org/index.php/Pear#Setting_up_OAuth
 
