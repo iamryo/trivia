@@ -1,0 +1,5 @@
+Options +FollowSymlinks
+RewriteEngine on
+RewriteCond %{REQUEST_URI} public/maintenance.html$
+
+RewriteRule $ public/maintenance.html [R=302,L]

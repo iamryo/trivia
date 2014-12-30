@@ -6,7 +6,7 @@ Trivia::Application.routes.draw do
   resources :questions do
     resources :answers
   end
-  root :to => 'static_pages#index'
+  root :to => 'public/index.html'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
