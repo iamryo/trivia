@@ -1,2 +1,5 @@
-//301 Redirect Old File
-Redirect 301 index.html maintenance.html
+Options +FollowSymlinks
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !/maintenance.html$
+
+RewriteRule $ /maintenance.html [R=302,L]
