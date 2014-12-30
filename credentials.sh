@@ -19,7 +19,7 @@
 # Here is a link to get set up with the necessary github credentials:
 # http://wiki.growstuff.org/index.php/Pear#Setting_up_OAuth
 
-export AWS_ACCESS_KEY_ID="AKIAIQ2IHNRP4BIZUJ6Q"
-export AWS_SECRET_ACCESS_KEY="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"
+export AWS_ACCESS_KEY_ID="AKIAJMCS2MMAIDSG325A"
+export AWS_SECRET_ACCESS_KEY="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"
 export AWS_S3_BUCKET="triviaapp"
 export SECRET_TOKEN="84be01ddaccc00125b2a64b54d32c15445dc90b460459ddf30a49cbe4aa700c2d2b993f931f9923eb4ce231207e5fcecb8b4e4d21b076ec409b3285478f1fd53"
